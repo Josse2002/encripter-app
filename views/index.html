@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encripter app</title>
+    <!--Estilos-->
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <main class="main">
+        <!--caja de texto con el logo-->
+        <section class="text-area-logo">
+            <div class="logo">
+                <img src="../images/logo.png" alt="logoAlura">
+            </div>
+            <div class="text-area">
+                <textarea name="encripter" id="encripter-input" placeholder="Ingrese el texto aquí" cols="30" rows="10"></textarea>
+            </div>
+        <div class="controller">
+            <div class="controls-center">
+                <div class="text-warning">
+                    <img src="../images/icon-warning.png" alt="icon warning">
+                    <p>Solo letra minusculas y sin acentos</p>
+                </div>
+                
+                <div class="buttons-encrypt">
+                    <button id="encrypt-button" type="button" class="class-encrypt-button">Encriptar</button>
+                    <button id="decrypt-button" type="button" class="class-decrypt-button">Desencriptar</button>
+                </div> 
+            </div>
+        </div>
+           
+        </section>
+        <!--Almacenador de las palabras encriptadas-->
+        <section class="encripter-storage">
+            <div class="encripterBox">
+                <img src="../images/person-search.png" alt="">
+            </div>
+        </section>
+    </main>
+</body>
+</html>

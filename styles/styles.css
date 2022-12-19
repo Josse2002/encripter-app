@@ -1,0 +1,105 @@
+
+/* Inicializando variables de color */
+:root{
+    --main-bg-color: #f5f5f5;
+    --secundary-bg-color: #ffffff;
+    --terciarty-color: #0A3871;
+    --color-enfasys: #D8DFE8;
+    --text-secondary-color: #495057;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--main-bg-color);
+}
+.main{
+    width: 90%;
+    display: flex;
+    margin: 2% 5%;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70vh;
+}
+/* Ajustando y asignando espacios de manera responsiva a las secciones*/
+.text-area-logo{
+    width: calc(75% - 20px);
+    height: 100%;
+    margin-right: 20px;
+}
+.encripter-storage{
+    width: 25%;
+    height: 100%;
+}
+/* Estilos para el area de texto */
+.text-area{
+    width: 100%;
+    height: 100%;
+}
+.text-area textarea{
+   resize: none;
+   border: none;
+   margin: 5% 10%;
+   width: 80%;
+   height: 100%;
+   background: none;
+   outline: none;
+   font-size: 23px;
+   font-family: poppins;
+   color: var(--terciarty-color);
+}
+
+.text-area textarea::placeholder{
+    font-size: 23px;
+    font-family: poppins;
+    color: var(--terciarty-color);
+}
+.encripterBox{
+    background: var(--secundary-bg-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.buttons-encrypt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.buttons-encrypt button{
+    margin: 0 20px;
+    border: none;
+    outline: none;
+    padding: 20px 40px;
+    font-size: 19px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.controller{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-warning{
+    font-size: 13px;
+    color: var(--text-secondary-color);
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.text-warning img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.buttons-encrypt button:nth-child(1){
+    background: var(--terciarty-color);
+    color: var(--secundary-bg-color);
+}
+.buttons-encrypt button:nth-child(2){
+    background: var(--color-enfasys);
+    color: var(--terciarty-color);
+}

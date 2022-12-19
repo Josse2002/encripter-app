@@ -22,7 +22,7 @@ body{
     margin: 2% 5%;
     flex-direction: row;
     justify-content: space-between;
-    height: 70vh;
+    height: 90vh;
 }
 /* Ajustando y asignando espacios de manera responsiva a las secciones*/
 .text-area-logo{
@@ -37,12 +37,11 @@ body{
 /* Estilos para el area de texto */
 .text-area{
     width: 100%;
-    height: 100%;
 }
 .text-area textarea{
    resize: none;
    border: none;
-   margin: 5% 10%;
+   margin: 4% 10%;
    width: 80%;
    height: 100%;
    background: none;
@@ -57,19 +56,14 @@ body{
     font-family: poppins;
     color: var(--terciarty-color);
 }
-.encripterBox{
-    background: var(--secundary-bg-color);
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
+
 
 .buttons-encrypt{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.buttons-encrypt button{
+button.class-encrypt-button, button.class-decrypt-button{
     margin: 0 20px;
     border: none;
     outline: none;
@@ -95,11 +89,58 @@ body{
     height: 15px;
     margin-right: 5px;
 }
-.buttons-encrypt button:nth-child(1){
+button.class-encrypt-button{
     background: var(--terciarty-color);
     color: var(--secundary-bg-color);
 }
-.buttons-encrypt button:nth-child(2){
-    background: var(--color-enfasys);
+button.class-decrypt-button{
+    background: none;
     color: var(--terciarty-color);
+    border: 2px solid var(--terciarty-color);
+}
+.encripterBox{
+    background: var(--secundary-bg-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 1px -1px 27px -12px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 1px -1px 27px -12px rgba(0,0,0,0.56);
+    -moz-box-shadow: 1px -1px 27px -12px rgba(0,0,0,0.56);
+}
+.notFoundEncrypt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.notFoundEncrypt img{
+    width: 80%;
+    margin:2% 10%;
+}
+.notFoundEncrypt h2{
+    color: #343A40;
+}
+.notFoundEncrypt p{
+    color: #495057;
+    font-size: 14px;
+}
+.textEncripted{
+    display: -webkit-box;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+}
+
+.textFound{
+    width: calc(100% -60px);
+    min-height: 100%;
+    height: 100%;
+    padding: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }

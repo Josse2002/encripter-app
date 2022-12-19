@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
     <title>Encripter app</title>
     <!--Estilos-->
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.media.css">
 </head>
+
 <body>
     <main class="main">
         <!--caja de texto con el logo-->
@@ -16,29 +19,55 @@
                 <img src="../images/logo.png" alt="logoAlura">
             </div>
             <div class="text-area">
-                <textarea name="encripter" id="encripter-input" placeholder="Ingrese el texto aquí" cols="30" rows="10"></textarea>
+                <textarea name="encripter" id="encripter-input" placeholder="Ingrese el texto aquí" cols="30"
+                    rows="10"></textarea>
             </div>
-        <div class="controller">
-            <div class="controls-center">
-                <div class="text-warning">
-                    <img src="../images/icon-warning.png" alt="icon warning">
-                    <p>Solo letra minusculas y sin acentos</p>
+            <div class="controller">
+                <div class="controls-center">
+                    <div class="text-warning">
+                        <img src="../images/icon-warning.png" alt="icon warning">
+                        <p>Solo letra minusculas y sin acentos</p>
+                    </div>
+
+                    <div class="buttons-encrypt">
+                        <button id="encrypt-button" type="button" class="class-encrypt-button">Encriptar</button>
+                        <button id="decrypt-button" type="button" class="class-decrypt-button">Desencriptar</button>
+                    </div>
                 </div>
-                
-                <div class="buttons-encrypt">
-                    <button id="encrypt-button" type="button" class="class-encrypt-button">Encriptar</button>
-                    <button id="decrypt-button" type="button" class="class-decrypt-button">Desencriptar</button>
-                </div> 
             </div>
-        </div>
-           
+
         </section>
         <!--Almacenador de las palabras encriptadas-->
         <section class="encripter-storage">
             <div class="encripterBox">
-                <img src="../images/person-search.png" alt="">
+                <div class="notFoundEncrypt">
+                    <img src="../images/person-search.png" alt="">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa un texto para encriptar o desencriptar</p>
+                </div>
+                <div class="textFound">
+                    <div class="textEncripted">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facilis deleniti
+                            exercitationem
+                            porro natus libero nihil, adipisci officia dolorem at, cupiditate odio amet maiores dolor
+                            distinctio assumenda. Soluta, provident molestiae.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facilis deleniti
+                            exercitationem
+                            porro natus libero nihil, adipisci officia dolorem at, cupiditate odio amet maiores dolor
+                            distinctio assumenda. Soluta, provident molestiae.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facilis deleniti
+                            exercitationem
+                            porro natus libero nihil, adipisci officia dolorem at, cupiditate odio amet maiores dolor
+                            distinctio assumenda. Soluta, provident molestiae.
+                        </p>
+                    </div>
+
+                    <button id="decrypt-button" type="button" class="class-decrypt-button">Copiar</button>
+                </div>
             </div>
         </section>
     </main>
 </body>
+
 </html>

@@ -9,6 +9,7 @@
     <!--Estilos-->
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/styles.media.css">
+   
 </head>
 
 <body>
@@ -40,13 +41,13 @@
         <!--Almacenador de las palabras encriptadas-->
         <section class="encripter-storage">
             <div class="encripterBox">
-                <div class="notFoundEncrypt">
+                <div class="notFoundEncrypt" id="notFoundEncrypt">
                     <img src="../images/person-search.png" alt="">
                     <h2>Ningún mensaje fue encontrado</h2>
                     <p>Ingresa un texto para encriptar o desencriptar</p>
                 </div>
-                <div class="textFound">
-                    <div class="textEncripted">
+                <div class="textFound" id="textFound">
+                    <div class="textEncripted" id="encrypted-output">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facilis deleniti
                             exercitationem
@@ -63,11 +64,14 @@
                         </p>
                     </div>
 
-                    <button id="decrypt-button" type="button" class="class-decrypt-button">Copiar</button>
+                    <button id="copy-button" type="button" class="class-decrypt-button">Copiar</button>
                 </div>
             </div>
         </section>
     </main>
+
+
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

@@ -39,16 +39,16 @@ body{
     width: 100%;
 }
 .text-area textarea{
-   resize: none;
-   border: none;
-   margin: 4% 10%;
-   width: 80%;
-   height: 100%;
-   background: none;
-   outline: none;
-   font-size: 23px;
-   font-family: poppins;
-   color: var(--terciarty-color);
+    resize: none;
+    border: none;
+    margin: 1% 10%;
+    width: 80%;
+    height: 71%;
+    background: none;
+    outline: none;
+    font-size: 23px;
+    font-family: poppins;
+    color: var(--terciarty-color);
 }
 
 .text-area textarea::placeholder{
@@ -129,8 +129,9 @@ button.class-decrypt-button{
 .textEncripted{
     display: -webkit-box;
     overflow-y: hidden;
+    overflow-wrap: break-word;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 10;
+    -webkit-line-clamp: 15;
     -webkit-box-orient: vertical;
 }
 

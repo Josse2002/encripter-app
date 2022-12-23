@@ -22,7 +22,6 @@ body{
     margin: 2% 5%;
     flex-direction: row;
     justify-content: space-between;
-    height: 90vh;
 }
 /* Ajustando y asignando espacios de manera responsiva a las secciones*/
 .text-area-logo{

@@ -31,4 +31,10 @@
     .notFoundEncrypt img{
         display: none;
     }
+    .buttons-encrypt button, button#copy-button{
+        font-size: 14px;
+    }
+    .logo img{
+        width: 27px;
+    }
 }

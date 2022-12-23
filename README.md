@@ -51,6 +51,6 @@ This software uses the following open source packages:
 MIT
 
 ---
-> GitHub [@amitmerchant1990](https://github.com/Josse2002) &nbsp;&middot;&nbsp;
-> Twitter [@amit_merchant](https://twitter.com/josse2530)
+> GitHub [Jose2530](https://github.com/Josse2002) &nbsp;&middot;&nbsp;
+> Twitter [@Josse](https://twitter.com/josse2530)
 

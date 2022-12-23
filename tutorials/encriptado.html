@@ -1,0 +1,39 @@
+
+<p>
+    La encriptación de un mensaje escrito en un input se hace mediante el uso de un patron de 
+    encriptación basico, el cual se genera mediante un arreglo de 5 pocisiones de tipo string,
+    que reemplaza las diferentes vocales de un texto ingresado por el usuario en un text-area. 
+
+    Cuando el usuario le da clic, se ejecuta un evento que llama a una funcion que recibe el texto
+    ingresado en el text-area, si este no está vacio, el texto lo convierte en un arreglo de caracteres, luego se recorre el arreglo
+    y se compara cada caracter con las vocales del patron de encriptación, si el caracter es una vocal
+    se reemplaza por la vocal del patron de encriptación que se encuentra en la misma pocision que la
+    vocal del texto ingresado, si el caracter no es una vocal, se deja igual.
+    <pre>
+        <code>
+            switch (character) {
+                case "a":
+                    output += encryptedConverter[0];
+                    break;
+                case "e":
+                    output += encryptedConverter[1];
+                    break;
+                case "i":
+                    output += encryptedConverter[2];
+                    break;
+                case "o":
+                    output += encryptedConverter[3];
+                    break;
+                case "u":
+                    output += encryptedConverter[4];
+                    break;
+                default:
+                    output += character;
+            }
+        </code>
+    </pre>
+   
+
+    Posteriormente, si el encriptado fue correcto se muestra el mensaje encriptado en un div, 
+    junto a un mensaje de notificación, si algo ha fallado se muestra un mensaje de error.
+</p>

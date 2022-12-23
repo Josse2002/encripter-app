@@ -187,8 +187,9 @@ function decrypt() {
 
 
 /**
- * Evento que encripta el texto cuando se presiona el botón de encriptar
+ * Evento que encripta el texto cuando se presiona el botón de encripta, lee más en {@tutorial encriptado}
  *  @event encrypt
+ * 
  */
 encryptButton.addEventListener("click", encrypt);
 /**

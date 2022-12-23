@@ -9,13 +9,12 @@
         "cleverLinks": false,
         "monospaceLinks": false
     },
-    "dependencies": {
-        "clean-jsdoc-theme": "0.0.1",
-        "jsdoc": "3.4.3"
-    },
+   
     "opts": {
         "recurse": "true",
         "destination": "./docs/",
-        "template": "node_modules/clean-jsdoc-theme"
+        "template": "node_modules/clean-jsdoc-theme",
+        "tutorials": "./tutorials",
+        "readme": "README.md"
     }
 }

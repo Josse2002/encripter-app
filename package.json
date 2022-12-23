@@ -12,6 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/Josse2002/encripter-app.git"
   },
+  "dependencies": {
+    "jsdoc": "^3.4.3"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",

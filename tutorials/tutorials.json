@@ -1,0 +1,8 @@
+{
+    "encriptado": {
+        "title": "Encriptado de una palabra"
+    },
+    "desencriptado":{
+        "title": "Desencriptado de una palabra"
+    }
+}

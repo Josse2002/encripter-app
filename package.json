@@ -1,0 +1,22 @@
+{
+  "name": "encripter-app",
+  "version": "1.0.0",
+  "description": "An encripter app for Alura Challenge with Oracle Next Education",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs" : "jsdoc -c jsdoc.json",
+    "generate-docs": "jsdoc --configure jsdoc.json --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josse2002/encripter-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Josse2002/encripter-app/issues"
+  },
+  "homepage": "https://github.com/Josse2002/encripter-app#readme"
+}
